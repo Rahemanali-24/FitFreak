@@ -1,0 +1,19 @@
+.navbar{
+    margin: 0;
+    padding: 2rem;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.modal-body{
+  border-radius: 10px !important;
+  border: 1px solid red !important;
+  background-color: black;
+  }
+.my-modal{
+  border-radius: 10px;
+}
+
+
+  
+
