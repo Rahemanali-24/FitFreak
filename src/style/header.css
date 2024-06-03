@@ -1,14 +1,19 @@
+:root {
+  --main-bg-color: #3D3D3D;
+}
+
 .navbar{
     margin: 0;
     padding: 2rem;
-    background-color: black;
+    background-color: #3D3D3D;
     box-sizing: border-box;
+    
 }
 
 .modal-body{
   border-radius: 10px !important;
   border: 1px solid red !important;
-  background-color: black;
+  background-color: #3D3D3D;
   }
 .my-modal{
   border-radius: 10px;

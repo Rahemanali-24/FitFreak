@@ -2,8 +2,9 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { useState } from "react";
-// import { Link } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
+// import Log from './workoutlog';
+// import Home from "./home";
 
 // import { NavLink,useNavigate} from 'react-router-dom' 
 
@@ -48,24 +49,31 @@ function Header() {
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
               <li className="nav-item">
-                <a
+                <Link to=''
                   className="nav-link active text-white"
                   aria-current="page"
                   href="#"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link text-white" href="#">
                   About
                 </a>
               </li>
+
               <li className="nav-item">
-                <a className="nav-link text-white" >
+
+                <Link to='/workoutlog' className="nav-link text-white" >
                   
-                  Log
-                </a>
+                  {/* <select name="" id="">
+                    <option value="" onChange={Log}>WorkoutLog</option>
+                    <option value="" onChange={Home}>Log</option>
+                  </select> */}
+
+              Log
+                </Link>
 
                 {/* <Link to="Log">Log</Link> */}
                 
@@ -142,7 +150,7 @@ function Header() {
                       <Form.Label className="text-white">Gender</Form.Label>
                       <Form.Control type="Gender" placeholder="Gender" autoFocus />
                     </Form.Group>
-
+               
                     
                   </Form>
                   <Button  variant="danger"  onClick={handleClose}>

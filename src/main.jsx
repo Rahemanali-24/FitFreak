@@ -1,18 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Layout.jsx'
-import Log from './components/log.jsx';
-
+import WorkoutLog from './components/workoutlog.jsx';
+import Home from './components/home.jsx';
 const mainRoutes = [
   {
-    path: '/',
+    path: '/', 
     element: <Layout />,
     children: [
       {
-        path:'log',
-        element:Log,
+        path:'WorkoutLog',
+        element:<WorkoutLog/>,
+      },
+      {
+        path:'',
+        element:<Home/>,
       }
       
     ],
