@@ -2,28 +2,27 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link} from "react-router-dom";
 // import Log from './workoutlog';
 // import Home from "./home";
 
-// import { NavLink,useNavigate} from 'react-router-dom' 
+
+// import { NavLink,useNavigate} from 'react-router-dom'
 
 // const menuItems = [
- 
+
 //   {
 //       name: 'Log',
 //       to: 'Log',
 //   },
- 
-  
+
 // ]
 
 function Header() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
-
+ 
 
   return (
     <>
@@ -49,7 +48,8 @@ function Header() {
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
               <li className="nav-item">
-                <Link to=''
+                <Link
+                  to=""
                   className="nav-link active text-white"
                   aria-current="page"
                   href="#"
@@ -57,45 +57,33 @@ function Header() {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link text-white" href="#">
-                  About
-                </a>
-              </li>
+              
+              
+               <li>
+                 <Link to="WorkoutLog" className="nav-link text-white">
+                        WorkoutLog
+                      </Link>
+               </li>
+              
 
               <li className="nav-item">
-
-                <Link to='/workoutlog' className="nav-link text-white" >
-                  
-                  {/* <select name="" id="">
-                    <option value="" onChange={Log}>WorkoutLog</option>
-                    <option value="" onChange={Home}>Log</option>
-                  </select> */}
-
-              Log
+                <Link to="/WaterLog" className="nav-link text-white">
+                  Water Log
                 </Link>
-
-                {/* <Link to="Log">Log</Link> */}
-                
-          
-
-                
               </li>
+
+                <li className="nav-item">
+                <Link to="/FoodLog" className="nav-link text-white">
+                  Food Log
+                </Link>
+              </li>
+
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <Link to = "Progress" className="nav-link text-white" href="#">
                   Progress
-                </a>
+                </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link text-white" href="#">
-                  Diet
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white" href="#">
-                  Contact
-                </a>
-              </li>
+             
               <Button variant="danger" onClick={handleShow}>
                 SignUp
               </Button>
@@ -134,29 +122,36 @@ function Header() {
                         autoFocus
                       />
 
-                    
-
                       <Form.Label className="text-white">Goal</Form.Label>
                       <Form.Control type="Goal" placeholder="Goal" autoFocus />
 
                       <Form.Label className="text-white">Height</Form.Label>
-                      <Form.Control type="Height" placeholder="Height" autoFocus />
+                      <Form.Control
+                        type="Height"
+                        placeholder="Height"
+                        autoFocus
+                      />
                       <Form.Label className="text-white">BMI</Form.Label>
                       <Form.Control type="BMI" placeholder="BMI" autoFocus />
                       <Form.Label className="text-white">BirthDay</Form.Label>
-                      <Form.Control type="BirthDay" placeholder="BirthDay" autoFocus />
+                      <Form.Control
+                        type="BirthDay"
+                        placeholder="BirthDay"
+                        autoFocus
+                      />
                       <Form.Label className="text-white">Age</Form.Label>
                       <Form.Control type="Age" placeholder="Age" autoFocus />
                       <Form.Label className="text-white">Gender</Form.Label>
-                      <Form.Control type="Gender" placeholder="Gender" autoFocus />
+                      <Form.Control
+                        type="Gender"
+                        placeholder="Gender"
+                        autoFocus
+                      />
                     </Form.Group>
-               
-                    
                   </Form>
-                  <Button  variant="danger"  onClick={handleClose}>
+                  <Button variant="danger" onClick={handleClose}>
                     Close
                   </Button>
-                  
                 </Modal.Body>
               </Modal>
               <Button className="ms-3" variant="danger">

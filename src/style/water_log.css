@@ -1,0 +1,45 @@
+.water-log-main-table{
+    background-color: #173540;
+    display: flex;
+    padding: 9%;
+    gap: 20px;
+}
+
+.water-log-table-data{
+    width: 60%;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+water-logWorkOut{
+    border: 1px solid white;
+    margin: 0vw 2vw 0 0;
+}
+
+water-log-table-body{
+    width: 20%;
+    padding: 30px;
+    border: 1px solid white;
+}
+
+.drop{
+    background-color: #3D3D3D;
+    color: white;
+    border-color: #3D3D3D;
+}
+
+water-log-table-content{
+    background-color: #161F30;
+
+}
+
+water-inp{
+
+}
+
+.water-log-table-result{
+    border: 1px solid white;
+    padding: 20px;
+    width: 70%;
+}
+

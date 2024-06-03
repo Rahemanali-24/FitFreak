@@ -1,0 +1,74 @@
+.main-table{
+    /* display: flex; */
+    /* padding: 40px; */
+    background-color: #173540;
+    /* gap: 20px; */
+   
+}
+.table-body{
+    width: 60%;
+}
+.inp{
+    height: 6vh;
+    width: 10vw;
+}
+.workoutProperty{
+    background-color: red !important;
+}
+.btn2{
+    height: 4.5vh;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    /* background-color: red; */
+}   
+.sel{
+    width: 7vw;
+}
+.log-main-table{
+        display: flex;
+        padding: 40px;
+        background-color: #173540;
+        gap: 20px;
+}
+
+.log-table-data{
+    width: 60%;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.logWorkOut{
+    /* height: 30rem;
+    width: 25rem; */
+    /* padding: 10px; */
+    /* background-color: red; */
+    border: 1px solid white;
+    margin: 0vw 2vw 0 0;
+}
+
+.log-table-body{
+    width: 20%;
+    padding: 30px;
+    border: 1px solid white;
+}
+
+
+.log-table-content{
+    background-color: #161F30;
+}
+
+
+
+
+/* show table */
+
+
+.log-table-result{
+    border: 1px solid white;
+    padding: 20px;
+    width: 70%;
+}
+
+

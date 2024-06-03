@@ -1,5 +1,5 @@
 import Table from "react-bootstrap/Table";
-import "../style/log.css";
+import "../style/workout_log.css";
 import Button from "react-bootstrap/Button";
 
 function WorkoutLog() {
@@ -72,10 +72,13 @@ function WorkoutLog() {
           </tbody>
         </Table>
         </div>
+        
+        {/* workOutput show */}
+
 
 
       <div className="table-result">
-        <h1 className="text-center text-danger h3 pb-3">Today s Workout</h1>
+        <h1 className="text-center text-danger h3 pb-3">Today&apos;s Workout</h1>
       <Table striped bordered hover className="addWorkOutResult">
       <thead>
         <tr>
