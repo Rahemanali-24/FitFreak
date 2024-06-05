@@ -1,7 +1,7 @@
-import {CaloriesChart}from './charts/CaloriesChart';
-import { WaterIntakeChart } from "./charts/WaterIntakeChart";
-import { WorkoutChart } from "./charts/WorkoutChart";
-import { WorkoutDoughnut } from "./charts/WorkoutDoughnut";
+import CaloriesChart from './charts/CaloriesChart';
+import  WaterIntakeChart  from "./charts/WaterIntakeChart";
+import  WorkoutChart  from "./charts/WorkoutChart";
+import  WorkoutDoughnut  from "./charts/WorkoutDoughnut";
 function Progress(){
     return <>
      <div>
@@ -9,6 +9,8 @@ function Progress(){
       <WaterIntakeChart />
       <WorkoutChart />
       <WorkoutDoughnut />
+
+
     </div>
     
     </>

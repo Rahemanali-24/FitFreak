@@ -1,6 +1,6 @@
 .main-table{
-    /* display: flex; */
-    /* padding: 40px; */
+    /* display: flex;
+    padding: 100px; */
     background-color: #173540;
     /* gap: 20px; */
    
@@ -28,7 +28,7 @@
 }
 .log-main-table{
         display: flex;
-        padding: 40px;
+        padding: 100px;
         background-color: #173540;
         gap: 20px;
 }
