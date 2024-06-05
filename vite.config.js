@@ -37,7 +37,13 @@ export default defineConfig({
         /^node:.*/,
         "react", // ignore react stuff
         "react-dom",
-      ]
+      ],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDom'
+        }
+      }
     },
     resolve: {
       alias: {
